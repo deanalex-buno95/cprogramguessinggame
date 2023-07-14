@@ -13,7 +13,14 @@ int main() {
         scanf("%d", &userGuess);
         numberOfGuesses--;
     }
-    printf("You win!\n");
+
+    /* Win or Lose */
+    if (userGuess == SECRET_NUMBER) {
+        printf("You win!\n");  // Win
+    }
+    else {
+        printf("Better luck next time!\n");  // Lose
+    }
 
     return 0;
 }
